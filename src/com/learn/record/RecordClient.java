@@ -1,5 +1,8 @@
 package com.learn.record;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class RecordClient {
 	
 	public static void main(String[] args) {
@@ -8,6 +11,14 @@ public class RecordClient {
 		
 		System.out.println(b1);
 		System.out.println(b2);
+		List<Book> bookList = new ArrayList<>();
+		bookList.add(b1);
+		bookList.add(b2);
+		
+		bookList.stream().filter(b -> b.price() >100);
+		
+		
+		
 		
 	}
 
